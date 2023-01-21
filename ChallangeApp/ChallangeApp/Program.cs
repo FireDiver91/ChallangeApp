@@ -5,24 +5,29 @@
 // Ewa, lat 33
 // Niepełnoletni mężczyzna
 
-var Imię = "Ewa";
-var Płeć = "Kobieta";
-var Wiek = 33;
 
-if (Imię != "Ewa")
+var name = "Zbigniew";
+var sex = "Male";
+var age = 115;
+
+if (sex == "Female" && name == "Ewa" && age == 33)
 {
-    Console.WriteLine("Niepełnoletni mężczyzna");
+    Console.WriteLine("Ewa lat 33");
 }
-else if (Płeć != "Kobieta")
-{
-    Console.WriteLine("Niepełnoletni mężczyna");
-}
-else if (Wiek < 30)
+else if (sex == "Famale" && name != "Ewa" && age < 30)
 {
     Console.WriteLine("Kobieta poniżej 30 lat");
 }
-else
+else if (sex != "Female" && age < 18)
 {
-    Console.WriteLine("Ewa, lat 33");
+    Console.WriteLine("Niepełnoletni mężczyzna");
+
 }
+else
+    Console.WriteLine("Mężczyzna");
+
+
+
+
+
 
