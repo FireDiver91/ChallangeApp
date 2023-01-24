@@ -1,74 +1,103 @@
-﻿// Dzień 4
+﻿// dzień 5 - zdanie domowe.
 
-// zmienna z imieniem
-// zmienna z płcią
-// zmienna z wiekiem
-// Kobieta poniżej 30 lat
-// Ewa, lat 33
-// Niepełnoletni mężczyzna
+/*var number = console.readline();
+char[] letters = number.toarray();
 
-var name = "Zbigniew";
-var sex = "Male";
-var age = 115;
+list<char> digits = new list<char>();
+digits.add('0');
+digits.add('1');
+digits.add('2');
+digits.add('3');
+digits.add('4');
+digits.add('5');
+digits.add('6');
+digits.add('7');
+digits.add('8');
+digits.add('9');
 
-if (sex == "Female" && name == "Ewa" && age == 33)
+foreach (char c in digits)
 {
-    Console.WriteLine("Ewa lat 33");
-}
-else if (sex == "Famale" && name != "Ewa" && age < 30)
+var count = 0;
+foreach (char l in letters)
 {
-    Console.WriteLine("Kobieta poniżej 30 lat");
-}
-else if (sex != "Female" && age < 18)
+if (c==l)
 {
-    Console.WriteLine("Niepełnoletni mężczyzna");
+count++; 
+        }  
+    }
+console.writeline("ilość" + (c) + "=>" + (count));
+}*/
+
+
+
+/*var number = Console.ReadLine();
+char[] letters = number.ToString().ToArray();
+List<char> cyfry = new List<char>();
+cyfry.Add('0');
+cyfry.Add('1');
+cyfry.Add('2');
+cyfry.Add('3');
+cyfry.Add('4');
+cyfry.Add('5');
+cyfry.Add('6');
+cyfry.Add('7');
+cyfry.Add('8');
+cyfry.Add('9');
+
+foreach (var c in cyfry)
+{ 
+    var licz = 0;
+    foreach (var l in letters)
+    {
+        if (l == c)
+        {
+            licz++;
+
+        }
+    }
+    Console.WriteLine($"{c} => {licz}");
 }
-else
+*/
+
+
+
+var number = Console.ReadLine();
+char[] letters = number.ToString().ToArray();
+List<char> chars= new List<char>();
+chars.Add('0');
+chars.Add('1');
+chars.Add('2');
+chars.Add('3');
+chars.Add('4');
+chars.Add('5');
+chars.Add('6');
+chars.Add('7');
+chars.Add('8');
+chars.Add('9');
+
+for (var i = 0; i < chars.Count; i++)
 {
-    Console.WriteLine("Mężczyzna");
+    var count = 0;
+
+    foreach (var l in letters)
+    {
+        if (chars[i] == l)
+        {
+            count++;
+        }
+    }
+Console.WriteLine($"{i} ==> {count}");
 }
 
-// Dzień 5
 
 
-string[] daysOfWeek = new string[7];
-daysOfWeek[0] = "poniedziałek";
-daysOfWeek[1] = "wtorek";
-daysOfWeek[2] = "środa";
-daysOfWeek[3] = "czwartek";
-daysOfWeek[4] = "piątek";
-daysOfWeek[5] = "sobota";
-daysOfWeek[6] = "niedziela";
 
-string[] daysOfWeek2 = { "monday", "tuesday", "wednesday", "thursday", "firday", "saturday", "sunday" };
 
-foreach (var lolek in daysOfWeek)
-{
-    Console.WriteLine(lolek);
-}
 
-for (var j = 0; j < daysOfWeek2.Length; j = j + 2)
-{
-    Console.WriteLine(daysOfWeek2[j]);
-}
 
-List<string> newDays = new List<string>();
-newDays.Add("montag");
-newDays.Add("dienstag");
-newDays.Add("mittwoch");
-newDays.Add("donnerstag");
 
-for (var g = 0; g < newDays.Count; g++)
-{
-    Console.WriteLine(newDays[g]);
-}
 
-if (newDays.Count != 0)
-{
-    Console.WriteLine("It is working");
-}
-else
-    Console.WriteLine("lipa");
+
 
 
 
